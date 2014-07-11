@@ -30,7 +30,7 @@ or download the css on github and include in your project.
 .o-90 { opacity: .9; }
 .o-full { opacity: 1; }
 
-@include break(not-small) {
+@media screen and (min-width: 48em) {
   .o-10-ns { opacity: .1; }
   .o-20-ns { opacity: .2; }
   .o-30-ns { opacity: .3; }
@@ -43,7 +43,7 @@ or download the css on github and include in your project.
   .o-full-ns { opacity: 1; }
 }
 
-@include break(medium) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .o-10-m { opacity: .1; }
   .o-20-m { opacity: .2; }
   .o-30-m { opacity: .3; }
@@ -56,7 +56,7 @@ or download the css on github and include in your project.
   .o-full-m { opacity: 1; }
 }
 
-@include break(large) {
+@media screen and (min-width: 64em)  {
   .o-10-l { opacity: .1; }
   .o-20-l { opacity: .2; }
   .o-30-l { opacity: .3; }
