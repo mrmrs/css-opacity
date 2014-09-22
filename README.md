@@ -20,7 +20,8 @@ View on [npm](https://www.npmjs.org/package/css-opacity)
 ## File Size
 
 1.2K opacity.css
-888B opacity.min.css
+888B opacity.min.css 
+233B minified and gzipped
 
 ## The Code
 ```
