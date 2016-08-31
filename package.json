@@ -1,7 +1,7 @@
 {
   "name": "css-opacity",
   "style": "opacity.css",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "homepage": "http://github.com/mrmrs/css-opacity",
   "description": "Css module of single purpose classes for opacity",
   "keywords": [
@@ -30,7 +30,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "tachyons-cli": "^1.0.2"
+    "tachyons-cli": "^1.0.4"
   },
   "scripts": {
     "start": "tachyons src/css-opacity.css > css/css-opacity.css && tachyons src/css-opacity.css --minify > css/css-opacity.min.css && tachyons src/css-opacity.css --generate-docs --package=../../package.json > readme.md"
