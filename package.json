@@ -30,9 +30,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "tachyons-cli": "^1.3.0"
   },
   "scripts": {
-    "start": "tachyons src/css-opacity.css > css/css-opacity.css && tachyons src/css-opacity.css --minify > css/css-opacity.min.css && tachyons src/css-opacity.css --generate-docs --package=../../package.json > readme.md"
   }
 }
