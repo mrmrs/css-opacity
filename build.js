@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { transform } = require('lightningcss');
 
-const srcFile = path.join(__dirname, 'src', 'css-opacity.css');
+const srcFile = path.join(__dirname, 'src', 'opacity.css');
 const distDir = path.join(__dirname, 'dist');
 
 // Read source
@@ -15,22 +15,22 @@ if (!fs.existsSync(distDir)) {
 
 // Unminified — just normalize formatting
 const { code: unminified } = transform({
-  filename: 'css-opacity.css',
+  filename: 'opacity.css',
   code: Buffer.from(source),
   minify: false,
 });
 
-fs.writeFileSync(path.join(distDir, 'css-opacity.css'), unminified);
+fs.writeFileSync(path.join(distDir, 'opacity.css'), unminified);
 
 // Minified
 const { code: minified } = transform({
-  filename: 'css-opacity.css',
+  filename: 'opacity.css',
   code: Buffer.from(source),
   minify: true,
 });
 
-fs.writeFileSync(path.join(distDir, 'css-opacity.min.css'), minified);
+fs.writeFileSync(path.join(distDir, 'opacity.min.css'), minified);
 
 console.log('Build complete:');
-console.log(`  dist/css-opacity.css     ${unminified.length} bytes`);
-console.log(`  dist/css-opacity.min.css ${minified.length} bytes`);
+console.log(`  dist/opacity.css     ${unminified.length} bytes`);
+console.log(`  dist/opacity.min.css ${minified.length} bytes`);
