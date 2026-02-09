@@ -1,38 +1,44 @@
 {
   "name": "css-opacity",
-  "style": "opacity.css",
-  "version": "1.0.7",
-  "homepage": "http://github.com/mrmrs/css-opacity",
-  "description": "Css module of single purpose classes for opacity",
+  "version": "2.0.0",
+  "description": "Functional CSS for opacity",
+  "style": "dist/opacity.css",
+  "main": "dist/opacity.css",
+  "exports": {
+    ".": "./dist/opacity.css",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "css",
-    "oocss",
-    "opacity"
+    "opacity",
+    "utility",
+    "single-purpose",
+    "functional-css"
   ],
-  "css-opacity": {
+  "homepage": "https://github.com/mrmrs/css-opacity",
+  "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/css-opacity.git"
+    "url": "https://github.com/mrmrs/css-opacity.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/css-opacity/issues",
-    "email": "hi@mrmrs.cc"
+    "url": "https://github.com/mrmrs/css-opacity/issues"
   },
   "author": {
     "name": "Adam Morse",
     "email": "hi@mrmrs.cc",
     "url": "http://mrmrs.cc"
   },
-  "contributors": [
-    {
-      "name": "Adam Morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "lightningcss": "^1"
-  },
-  "scripts": {
-    "build": "node build.js"
   }
 }
