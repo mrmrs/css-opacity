@@ -13,7 +13,7 @@
 .o-90 { opacity: .9; }
 .o-full { opacity: 1; }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .o-10-s { opacity: .1; }
   .o-20-s { opacity: .2; }
   .o-30-s { opacity: .3; }
@@ -26,7 +26,7 @@
   .o-full-s { opacity: 1; }
 }
 
-@media screen and (min-width:48em) and (max-width: 64em) {
+@media screen and (min-width:48em) {
   .o-10-m { opacity: .1; }
   .o-20-m { opacity: .2; }
   .o-30-m { opacity: .3; }
@@ -39,7 +39,7 @@
   .o-full-m { opacity: 1; }
 }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 96em) {
   .o-10-l { opacity: .1; }
   .o-20-l { opacity: .2; }
   .o-30-l { opacity: .3; }
