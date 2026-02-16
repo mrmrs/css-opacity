@@ -1,125 +1,120 @@
-# css-opacity 0.0.6
+# css-opacity
 
-Css module of single purpose classes for opacity
+Functional CSS for opacity
 
-#### Stats
+## Filesize
 
-275 | 40 | 40
----|---|---
-bytes | selectors | declarations
+| File | Size |
+|------|------|
+| `dist/opacity.css` | 6089 bytes |
+| `dist/opacity.min.css` | 3969 bytes (595 Gzipped) |
 
-## Installation
+## Install
 
-#### With [npm](https://npmjs.com)
-
-```
-npm install --save-dev css-opacity
-```
-
-#### With Git
-
-```
-git clone https://github.com/tachyons-css/css-opacity
+```sh
+npm install css-opacity
 ```
 
 ## Usage
 
-#### Using with [PostCSS](https://github.com/postcss/postcss)
-
-Import the css module
+### Import
 
 ```css
 @import "css-opacity";
 ```
 
-Then process the CSS using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
-
-```sh
-$ npm i -g tachyons-cli
-$ tachyons-cli path/to/css-file.css > dist/t.css
-```
-
-#### Using the CSS
-
-The built CSS is located in the `css` directory. It contains an unminified and minified version.
-You can either cut and paste that css or link to it directly in your html.
+### CDN
 
 ```html
-<link rel="stylesheet" href="path/to/module/css/css-opacity">
+<link rel="stylesheet" href="https://unpkg.com/css-opacity/dist/opacity.min.css">
 ```
 
-#### Development
+### Direct
 
-The source CSS files can be found in the `src` directory.
-Running `$ npm start` will process the source CSS and place the built CSS in the `css` directory.
-
-## The CSS
-
-```css
-/*
-  OPACITY
-*/
-.o-10 { opacity: .1; }
-.o-20 { opacity: .2; }
-.o-30 { opacity: .3; }
-.o-40 { opacity: .4; }
-.o-50 { opacity: .5; }
-.o-60 { opacity: .6; }
-.o-70 { opacity: .7; }
-.o-80 { opacity: .8; }
-.o-90 { opacity: .9; }
-.o-full { opacity: 1; }
-@media screen and (min-width: 48em) {
- .o-10-ns { opacity: .1; }
- .o-20-ns { opacity: .2; }
- .o-30-ns { opacity: .3; }
- .o-40-ns { opacity: .4; }
- .o-50-ns { opacity: .5; }
- .o-60-ns { opacity: .6; }
- .o-70-ns { opacity: .7; }
- .o-80-ns { opacity: .8; }
- .o-90-ns { opacity: .9; }
- .o-full-ns { opacity: 1; }
-}
-@media screen and (min-width:48em) and (max-width: 64em) {
- .o-10-m { opacity: .1; }
- .o-20-m { opacity: .2; }
- .o-30-m { opacity: .3; }
- .o-40-m { opacity: .4; }
- .o-50-m { opacity: .5; }
- .o-60-m { opacity: .6; }
- .o-70-m { opacity: .7; }
- .o-80-m { opacity: .8; }
- .o-90-m { opacity: .9; }
- .o-full-m { opacity: 1; }
-}
-@media screen and (min-width: 64em) {
- .o-10-l { opacity: .1; }
- .o-20-l { opacity: .2; }
- .o-30-l { opacity: .3; }
- .o-40-l { opacity: .4; }
- .o-50-l { opacity: .5; }
- .o-60-l { opacity: .6; }
- .o-70-l { opacity: .7; }
- .o-80-l { opacity: .8; }
- .o-90-l { opacity: .9; }
- .o-full-l { opacity: 1; }
-}
+```html
+<link rel="stylesheet" href="path/to/css-opacity/dist/opacity.min.css">
 ```
 
-## Contributing
+## Classes
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+| Class   | Value                    |
+|---------|--------------------------|
+| `.o0` | `opacity: 0;` |
+| `.o1` | `opacity: .025;` |
+| `.o2` | `opacity: .05;` |
+| `.o3` | `opacity: .1;` |
+| `.o4` | `opacity: .2;` |
+| `.o5` | `opacity: .3;` |
+| `.o6` | `opacity: .4;` |
+| `.o7` | `opacity: .5;` |
+| `.o8` | `opacity: .6;` |
+| `.o9` | `opacity: .7;` |
+| `.o10` | `opacity: .8;` |
+| `.o11` | `opacity: .9;` |
+| `.o12` | `opacity: 1;` |
+| `.o0-s` | `opacity: 0;` |
+| `.o1-s` | `opacity: .025;` |
+| `.o2-s` | `opacity: .05;` |
+| `.o3-s` | `opacity: .1;` |
+| `.o4-s` | `opacity: .2;` |
+| `.o5-s` | `opacity: .3;` |
+| `.o6-s` | `opacity: .4;` |
+| `.o7-s` | `opacity: .5;` |
+| `.o8-s` | `opacity: .6;` |
+| `.o9-s` | `opacity: .7;` |
+| `.o10-s` | `opacity: .8;` |
+| `.o11-s` | `opacity: .9;` |
+| `.o12-s` | `opacity: 1;` |
+| `.o0-m` | `opacity: 0;` |
+| `.o1-m` | `opacity: .025;` |
+| `.o2-m` | `opacity: .05;` |
+| `.o3-m` | `opacity: .1;` |
+| `.o4-m` | `opacity: .2;` |
+| `.o5-m` | `opacity: .3;` |
+| `.o6-m` | `opacity: .4;` |
+| `.o7-m` | `opacity: .5;` |
+| `.o8-m` | `opacity: .6;` |
+| `.o9-m` | `opacity: .7;` |
+| `.o10-m` | `opacity: .8;` |
+| `.o11-m` | `opacity: .9;` |
+| `.o12-m` | `opacity: 1;` |
+| `.o0-l` | `opacity: 0;` |
+| `.o1-l` | `opacity: .025;` |
+| `.o2-l` | `opacity: .05;` |
+| `.o3-l` | `opacity: .1;` |
+| `.o4-l` | `opacity: .2;` |
+| `.o5-l` | `opacity: .3;` |
+| `.o6-l` | `opacity: .4;` |
+| `.o7-l` | `opacity: .5;` |
+| `.o8-l` | `opacity: .6;` |
+| `.o9-l` | `opacity: .7;` |
+| `.o10-l` | `opacity: .8;` |
+| `.o11-l` | `opacity: .9;` |
+| `.o12-l` | `opacity: 1;` |
 
-## Authors
+### Responsive
 
-* [mrmrs](http://mrmrs.io)
-* [johno](http://johnotander.com)
+Responsive variants are available for each class with the following suffixes:
+
+| Suffix | Media Query              |
+|--------|--------------------------|
+| `-s`   | `min-width: 32em`        |
+| `-m`   | `min-width: 48em`        |
+| `-l`   | `min-width: 96em`        |
+
+Example: `.o0-m` applies the property at the medium breakpoint and above.
+
+## Building
+
+```sh
+npm run build
+```
+
+Processes `src/opacity.css` with [Lightning CSS](https://lightningcss.dev) and outputs to `dist/`.
+
+- `dist/opacity.css` — formatted
+- `dist/opacity.min.css` — minified
 
 ## License
 
-ISC
+MIT
